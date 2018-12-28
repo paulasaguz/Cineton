@@ -1,0 +1,17 @@
+<div class="movies">
+  <form (submit)="handleSubmit($event)">
+    <input type="text" placeholder="searchMovie">
+  </form>
+  <ul>
+    <li *ngFor="let movie of movies">
+      {{movie.title}}
+      <img src={{movie.medium_cover_image}} alt="">
+    </li>
+  </ul>
+  <ul>
+    <li *ngFor="let movie of movielist">
+      {{movie.title}}
+      <img src={{movie.medium_cover_image}} alt="">
+    </li>
+    </ul>
+</div>

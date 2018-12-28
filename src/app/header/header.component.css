@@ -1,0 +1,28 @@
+.header {
+  height: 55px;
+}
+.display {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-family: 'Roboto', sans-serif;
+}
+.grey {
+  color: gray;
+  font-size: 20px
+}
+.header-left {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+.header-right {
+  display: flex;
+}
+.header-right li {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
