@@ -7,20 +7,22 @@ import { RestService } from '../rest.service';
   styleUrls: ['./product.component.css']
 })
 export class ProductComponent {
-
+  movielist: any;
+  movies: any;
   constructor(public rest:RestService) { }
+
   showListMovies(){
     this.rest.getListMovies()
-    .subscribe((data)=>{
-      console.log(data.data.movies)
-      return this.movielist = data.movies
+    .subscribe((datalist)=>{
+      console.log(datalist.data.movies)
+      return this.movielist = datalist.data.movies
     })
   }
   showMovies(name){
     this.rest.getMovie(name)
-    .subscribe((data)=>{
-      console.log(data.data.movies)
-      return this.movies = data.data.movies
+    .subscribe((datamovie)=>{
+      console.log(datamovie.data.movies)
+      return this.movies = datamovie.data.movies
     })
   }
   handleSubmit(event){

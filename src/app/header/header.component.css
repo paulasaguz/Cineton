@@ -7,6 +7,10 @@
   list-style: none;
   font-family: 'Roboto', sans-serif;
 }
+.cineton {
+  padding: 0 15px;
+  font-size: 24px;
+}
 .grey {
   color: gray;
   font-size: 20px
@@ -15,7 +19,7 @@
   font-size: 20px;
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 55px;
 }
 .header-right {
   display: flex;
@@ -24,5 +28,16 @@
   padding: 0 15px;
   display: flex;
   align-items: center;
-  height: 50px;
+  height: 55px;
+}
+.header-left li {
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+.movies input {
+  padding: 10px 30px;
+  border-radius: 15px;
+  width: 200px;
+  margin: 0 10px;
 }
